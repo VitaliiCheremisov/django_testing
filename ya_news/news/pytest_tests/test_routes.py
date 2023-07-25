@@ -65,7 +65,8 @@ def test_availability_for_comment_edit_and_delete(
 def test_redirect_for_anonymous_client(client, name, args):
     """
     Тест: при попытке перейти на страницу редактирования или удаления
-    комментария анонимный пользователь перенаправляется на страницу авторизации.
+    комментария анонимный пользователь перенаправляется на страницу 
+    авторизации.
     """
     login_url = reverse('users:login')
     url = reverse(name, args=args)
