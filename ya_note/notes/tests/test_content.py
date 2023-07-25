@@ -46,7 +46,8 @@ class TestDetailPage(TestCase):
         Тест: на страницы создания  и редактирования
         заметки передаются формы.
         """
-        for name, args in (('notes:add', None), ('news:edit', (self.note.slug,))):
+        for name, args in (('notes:add', None),
+                           ('news:edit', (self.note.slug,))):
             with self.subTest(name=name, args=args):
                 url = reverse(name, args)
                 response = self.author_client.get(url)
