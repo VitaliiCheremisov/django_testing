@@ -73,8 +73,9 @@ def test_author_can_edit_comment(author_client, form_data, news, author,
     assert comment.text == form_data['text']
 
 
-def test_user_cant_edit_comment_of_another_user(reader_client, comment, news, author,
-                                                form_data, edit_comment_url):
+def test_user_cant_edit_comment_of_another_user(reader_client, comment, news,
+                                                author, form_data,
+                                                edit_comment_url):
     """Тест: авторизованный пользователь не может редактировать
     чужой комментарий.
     """
