@@ -49,3 +49,13 @@ Dev
 ```sh
 bash run_tests.sh
 ```
+Технологии
+```
+Python
+Django
+Django REST framework
+Pytest
+Unittest
+```
+Автор
+- [Виталий Черемисов](https://github.com/VitaliiCheremisov)
